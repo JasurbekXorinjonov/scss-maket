@@ -1,0 +1,55 @@
+@mixin siteContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.container {
+  @include siteContainer;
+}
+@mixin btnMixin($firstBtn) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding: 16px 41px;
+  background: $firstBtn;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin titleCenter {
+  font-style: normal;
+  font-weight: 770;
+  font-size: 54px;
+  line-height: 68px;
+  text-align: center;
+}
+.title_center {
+  @include titleCenter;
+}
+@mixin textCenter {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #3b433e;
+  margin-bottom: 68px;
+}
+.text_center {
+  @include textCenter;
+}
+
+@mixin firstChild {
+  font-weight: 770;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2c3847;
+  margin-bottom: 20px;
+  display: inline-block;
+}

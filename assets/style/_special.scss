@@ -1,0 +1,41 @@
+.special {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.special_cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.special_card {
+  width: 356px;
+  height: 520px;
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+}
+.special_card:hover {
+  box-shadow: -15px -50px 81px #ffffff, 10px 20px 70px rgba(71, 68, 68, 0.08);
+}
+.special_card img {
+  margin-top: 50px;
+}
+.special_card h2 {
+  font-weight: 770;
+  font-size: 30px;
+  line-height: 38px;
+  margin-top: 27px;
+}
+.special_card p {
+  color: rgba(57, 70, 63, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.special .btn {
+  @include btnMixin(linear-gradient(180deg, #64bb47 0%, #2c9553 100%));
+  margin-left: 500px;
+  padding: 16px 63px;
+  margin-bottom: 120px;
+}

@@ -1,0 +1,44 @@
+.about,
+.fresh,
+.best_chef {
+  max-width: 1235px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 120px;
+}
+.about_content {
+  margin-top: 150px;
+  margin-right: 95px;
+}
+.about_content .btn {
+  @include btnMixin(linear-gradient(180deg, #64bb47 0%, #2c9553 100%));
+}
+.about_content h1 {
+  font-weight: 770;
+  font-size: 54px;
+  line-height: 68px;
+}
+.about_content p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+}
+.fresh .about_img {
+  order: 1;
+}
+.fresh .about_content {
+  order: 2;
+  margin-left: 95px;
+  margin-top: 20px;
+}
+.about_icon {
+  display: flex;
+  margin-top: 64px;
+}
+.about_icon img {
+  margin: 0 17px 17px 0;
+}
+.mark_text h5 {
+  margin-bottom: 27px;
+}
